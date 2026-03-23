@@ -14,7 +14,7 @@ test('User can add a backpack to the cart', async ({ page }) => {
   await inventoryPage.addBackpack();
 
   const uniqueId = Date.now(); // Gets a number like 1711141320000
-  await page.screenshot({ path: `screenshots/cart_${uniqueId}.png` });
+  await page.screenshot({ path: `screenshots/Evidence/cart_${uniqueId}.png` });
 
   // 3. Click on cart
   await page.locator('[data-test="shopping-cart-link"]').click();

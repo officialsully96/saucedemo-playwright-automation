@@ -5,6 +5,7 @@ export class InventoryPage {
   readonly backpackAddToCartButton: Locator;
   readonly cartBadge: Locator;
   readonly cartLink: Locator;
+  readonly firstItemImage: Locator;
 
   constructor(page: Page) {
     this.page = page;
@@ -14,6 +15,10 @@ export class InventoryPage {
     this.cartBadge = page.locator('.shopping_cart_badge');
     // The cart button to review cart
     this.cartLink = page.locator('[data-test="shopping-cart-link"]');
+    //
+    this.page = page;
+    // We target the first image in the inventory list
+    this.firstItemImage = page.locator('.inventory_item_img img').first();
   }
 
   async addBackpack() {

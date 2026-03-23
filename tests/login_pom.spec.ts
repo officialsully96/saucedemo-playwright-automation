@@ -14,5 +14,5 @@ test('User can login successfully using POM', async ({ page }) => {
   await expect(page).toHaveURL('https://www.saucedemo.com/inventory.html');
   
   const uniqueId = Date.now(); // Gets a number like 1711141320000
-await page.screenshot({ path: `screenshots/login_${uniqueId}.png` });
+await page.screenshot({ path: `screenshots/Evidence/login_${uniqueId}.png` });
 });
